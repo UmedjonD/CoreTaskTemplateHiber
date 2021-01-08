@@ -17,35 +17,30 @@ public class Main {
 //        User user = new User();
         UserServiceImpl userService = new UserServiceImpl();
 
-//        userService.createUsersTable();
-//        System.out.println("успешно создали таблицу");
-//
-//        User user1 = new User("Khabib", "Nur", (byte) 43);
-//        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
-//
-//        User user2 = new User("Umed", "Sobirov", (byte) 23);
-//        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
-//
-//        User user3 = new User("Andrei", "Kotlin", (byte) 23);
-//        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
-//        System.out.println("add user");
+        userService.createUsersTable();
+        System.out.println("успешно создали таблицу");
 
-//        userService.removeUserById(2);
+        User user1 = new User("Khabib", "Nur", (byte) 43);
+        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
 
-//        System.out.println(userService.getAllUsers());
+        User user2 = new User("Umed", "Sobirov", (byte) 23);
+        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
 
-//        userService.cleanUsersTable();
+        User user3 = new User("Andrei", "Kotlin", (byte) 23);
+        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
+        System.out.println("add user");
+
+        userService.removeUserById(2);
+        System.out.println(userService.getAllUsers());
+        userService.cleanUsersTable();
+        userService.dropUsersTable();
+
 
 
 //        userService.cleanUsersTable();
 //        System.out.println("clean table");
         //userService.dropUsersTable();
 //        System.out.println("дропнули таблицу успешно");
-
-
-
-
-
 
 
         //--------------------------------------------------------//
